@@ -1,0 +1,221 @@
+.home-slide {
+    height: 540px;
+
+    &__title {
+        padding-top: 150px;
+
+        @media (max-width: $breakpoint-xs) {
+            padding-top: 50px;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 10px ;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+    }
+
+    &__btn {
+        padding: 10px 50px;
+        background-color: $color-primary;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+}
+
+.about-info {
+    
+    &__title {
+        line-height: 1.3;
+    }
+}
+
+.about-tabs {   
+
+    &__menu {
+        display: flex;
+        flex-flow: wrap;
+        margin-bottom: 30px; 
+    }
+
+    &__tab {
+        position: relative;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 15px 20px;
+        border: 1px solid #e7e7e7;
+        margin-right: 5px;
+        background: #f9f9f9;
+        border-radius: inherit;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &:focus {
+            background-color: $color-primary;
+            color: #f9f9f9;
+
+            &::after {
+                position: absolute;
+                left: 50%;
+                margin-left: -15px;
+                top: 59px;
+                content: "";
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-top: 15px solid #0cb8b6;
+            }
+    
+        }
+
+    }
+}
+
+.about-tab {
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding: 15px 10px;
+        background-color: #f4f4f4;
+        color: #666;
+        font-weight: 600;
+        border: 1px solid #e7e7e7;
+
+        &--middle {background: #fff;}
+
+        &:last-child {margin-bottom: 0;}
+        
+    }
+}
+
+.services {
+    background-color: rgb(248, 248, 248);
+}
+
+.services-card {
+    padding: 50px 30px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    &__title {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+    }
+
+    &__icon {
+        height: 100px;
+        width: 100px;
+        line-height: 100px;
+        color: #ffffff;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 30px 0;
+        font-size: 45px;
+        background: $color-primary;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
+
+    &__btn {
+        width: 170px;
+        padding: 10px 40px;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-radius: 100px 100px 100px 100px;
+        border: 2px solid $color-primary;
+    }
+}
+
+
+.specialist-card {
+    box-shadow: 0 0 10px rgb(135, 158, 167);
+    text-align: center;
+
+    &__img {
+        transition: all 0.25s ease-in-out;
+    }
+
+    &__overlay {
+        position: absolute;
+        bottom: 164px;
+        left: 43.5%;
+        height: 50px;
+        width: 50px;
+        background: $color-primary;
+        line-height: 50px;
+        border-radius: 50%;
+
+        @media (max-width: $breakpoint-md) {
+            display: none;
+        }
+    }
+
+    &__icon {
+        font-size: 15px;
+        color: #fff;
+        text-align: center;
+    }
+
+    &__info {
+        padding: 30px;
+        border-top: 2px solid $color-primary;
+    }
+
+    &__worker {
+        color: $color-primary;
+        padding: 5px 0;
+    }
+
+    &__block-link{
+        position: relative;
+        z-index: 1;
+        color: $text-secondary-color;
+
+        &::after {
+            position: absolute;
+            left: 0;
+            top: 15px;
+            content: "";
+            height: 1px;
+            width: 100%;
+            background: $text-secondary-color;
+            z-index: -1;
+        
+        }
+    }
+
+    &__link {
+        position: relative;
+        z-index: 1;
+        padding: 0 10px;
+        text-transform: uppercase;
+        color: $text-secondary-color;
+        background: #ffffff;
+    }
+
+    &:hover {
+
+        .social {
+            opacity: 1;
+        }
+
+        .specialist-card__img {
+            opacity: 0.5;
+        }
+    
+    }
+}

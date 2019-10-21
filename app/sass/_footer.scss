@@ -1,0 +1,24 @@
+.footer {
+    padding: 20px 0;
+    background: #000;
+    color: #fff;
+
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+
+        @media (max-width: $breakpoint-sm) {
+            flex-flow: column;
+        }
+    }
+
+    &__link {
+        color: #fff;
+        margin-left: 20px;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

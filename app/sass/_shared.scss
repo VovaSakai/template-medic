@@ -1,0 +1,120 @@
+.container {
+    max-width: 1140px;
+
+    &__home {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    &__about {
+        flex-flow: row nowrap;
+    }
+}
+
+.default-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media (max-width: $breakpoint-xs) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.default-heading {
+    padding: 0 0 50px 0;
+    text-align: center;
+
+
+    &__title {
+        text-transform: uppercase;
+    }
+}
+
+.social {
+    position: absolute;
+    bottom: 220px;
+    width: 93%;
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+
+    &__list {
+        display: inline-block;
+    }
+
+    &__icon {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: #000;
+        color: #fff;
+        font-size: 22px;
+        border-radius: 50%;
+
+        &--facebook {
+            background: rgb(59, 89, 152);;
+        }
+
+        &--twitter {
+            background: rgb(0, 182, 241);
+        }
+
+        &--instagram {
+            background: rgb(205, 72, 107);
+        }
+
+        &--linkedin {
+            background: rgb(0, 119, 181);
+        }
+    }
+
+}
+
+#home-owl-carousel .owl-nav > button {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+    outline: none;
+}
+
+
+#home-owl-carousel .owl-nav .owl-prev {
+    left: 30px;
+
+}
+  
+#home-owl-carousel .owl-nav .owl-next {
+    right: 30px;
+}
+
+
+.owl-nav > button {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+    outline: none;
+}
+
+#home-owl-carousel .owl-nav svg {
+    font-size: 40px;
+}
+
+.owl-nav svg {
+    font-size: 30px;
+    color: $color-primary;  
+}
+
+.owl-nav .owl-prev {
+    left: -30px;
+}
+  
+.owl-nav .owl-next {
+    right: -30px;
+    transform: rotate(180deg);
+}
+
+  
+
+  
