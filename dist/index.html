@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+
+<body>
+
+	<div class="page">
+
+		<div class="top-bar container">
+			<div class="top-bar__text">
+				<i class="fas fa-map-marker-alt top-bar__icon"></i>
+				<p>Москва, Ул. Ленинская</p>
+			</div>
+			<div class="top-bar__text">
+				<i class="fas fa-envelope-open top-bar__icon"></i>
+				<p>info@gmail.com </p>
+			</div>
+			<div class="top-bar__text">
+				<i class="fas fa-phone top-bar__icon"></i>
+				<p>+123 456 7890 </p>
+			</div>
+		</div>
+
+		<div class="top-bar__line"></div>
+
+		<header class="header container">
+			<div class="logo">
+				<img src="./img/logo.png" alt="" class="logo__img">
+			</div>
+
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+					<li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
+					<li class="nav__item"><a href="#specialists" class="nav__link">Врачи</a></li>
+				</ul>
+			</nav>
+
+		</header>
+
+		<div class="page-main">
+			<div class="home">
+				<div class="owl-carousel" id="home-owl-carousel">
+
+					<div class="home-slide">
+						<div class="home-slide__content">
+							<div class="container">
+								<h1 class="home-slide__title typo-h1">Лучшие <span
+										class="typo-color-primary">технология</span></h1>
+								<h3 class="home-slide__subtitle typo-h3">Доступное решение благодаря лучшей технологии
+								</h3>
+								<p class="home-slide__text">
+										Наш медицинский центр  — это диагностика и лечение
+										заболеваний более чем по 40 направлениям в соответствии со всеми отечественными и
+										международными медицинскими стандартами.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="home-slide home-slide--second">
+						<div class="home-slide__content">
+							<div class="container">
+								<h1 class="home-slide__title typo-h1">Лучший <span
+										class="typo-color-primary">уход</span></h1>
+								<h3 class="home-slide__subtitle typo-h3">Ваше здоровье - наш приоритет</h3>
+								<p class="home-slide__text ">Наш медицинский центр — это диагностика и лечение
+										заболеваний более чем по 40 направлениям в соответствии со всеми отечественными и
+										международными медицинскими стандартами.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="home-slide">
+						<div class="home-slide__content">
+							<div class="container">
+								<h1 class="home-slide__title typo-h1">Лучшие <span
+										class="typo-color-primary">специалисты</span></h1>
+								<h3 class="home-slide__subtitle typo-h3">Лучшие специалисты страны</h3>
+								<p class="home-slide__text ">Наш медицинский центр — это диагностика и лечение
+									заболеваний более чем по 40 направлениям в соответствии со всеми отечественными и
+									международными медицинскими стандартами.
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="about" id="about">
+			<div class="container">
+				<div class="default-padding row">
+					<div class="col-md-6">
+						<div class="about-info">
+							<h4 class="typo-h4 about-info__subtitle">
+								Работает с 2000 года
+							</h4>
+							<h2 class="typo-h2 about-info__title">Отличное место для работы. Отличное место для
+								получения ухода. Ведущая медицина.</h2>
+							<p class="about-info__text">Разработанная программа комплексного обследования
+								здоровья позволяет не только существенно сэкономить средства, но и время, так как все
+								диагностические процедуры (лабораторные анализы и ультразвуковые исследования)
+								проводятся в стенах нашей клиники.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div id="about-tabs" class="about-tabs">
+							<ul class="about-tabs__menu">
+								<li class="about-tabs__tab"><a class="about-tabs__link" href="#about-tab-1">Локация</a>
+								<li class="about-tabs__tab"><a class="about-tabs__link"
+										href="#about-tab-2">Консультация</a></li>
+								</li>
+								<li class="about-tabs__tab"><a class="about-tabs__link" href="#about-tab-3">Открытие</a>
+								</li>
+							</ul>
+
+							<div id="about-tab-1" class="about-tab">
+								<div class="typo-h2  about-tab__title">Наше место нахождения</div>
+								<div class="about-tab__text">
+									Парковка бесплатна
+								</div>
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1189.183580848633!2d37.62890261770486!3d55.74716565381164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af90095a0ab%3A0x9d428815e1fe6848!2zQi3QutC70LjQvdC40LrQsA!5e0!3m2!1sen!2sru!4v1561416493655!5m2!1sen!2sru"
+									width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+
+							<div id="about-tab-2" class="about-tab">
+								<div class="typo-h2 about-tab__title">Консультация опытных врачей</div>
+								<div class="about-tab__text">
+									С первых шагов медицинский центр был организован с целью оказания квалифицированной
+									помощи в сочетании с уютной атмосферой. Клиника, в которой каждая мелочь продумана и
+									направлена на повышение качества работы. Клиника, в которой мы воплотили весь свой
+									многолетний опыт и знания.
+								</div>
+							</div>
+
+							<div id="about-tab-3" class="about-tab-3">
+								<div class="typo-h2 about-tab__title">График рабочего времени</div>
+								<div class="about-tab__text">
+									Что в первую очередь волнует пациентов и их родственников? Доступ к первой помощи
+									без задержек, эффективность лечения, комфортные условия пребывания. В процессе
+									работы нашей компании мы тесно сотрудничаем с врачами, которые постоянно ищут
+									наилучшие методики лечения, в том числе и хирургического, с трепетом относятся к
+									здоровью пациентов, работают на совесть и отвечают за результаты своей работы.
+								</div>
+								<ul class="about-tab__list">
+									<li class="about-tab__item">
+										<span>Пн - Вт :</span>
+										<span>6:00 - 22:00 </span>
+									</li>
+
+									<li class="about-tab__item about-tab__item--middle">
+										<span>Ср - Пт :</span>
+										<span>8:00 - 18:00 </span>
+									</li>
+
+									<li class="about-tab__item">
+										<span>Вс :</span>
+										<span>Закрыто</span></li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="services" class="services">
+			<div class="default-padding">
+				<div class="container">
+					<div class="row justify-content-md-center">
+						<div class="col-md-8 col-md-offset-2">
+							<div class="default-heading">
+								<h2 class="typo-h2 default-heading__title">Центры передового <span
+										class="typo-color-primary">опыта</span></h2>
+								<p class="default-heading__text">
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="services__cards">
+						<div class="owl-carousel" id="services-owl-carousel">
+
+							<div class="services-card">
+								<h4 class="typo-h4 services-card__title">Уход за глазами</h4>
+								<i class="services-card__icon"><i class="fas fa-eye"></i></i>
+								<p class="services-card__text">
+									Врачи этой специальности занимаются диагностикой, лечением и
+									профилактикой заболеваний глаз. Вы можете к нам обратиться за консультацией при
+									появлении неприятных симптомов, для подбора очковых или контактных линз, проведения
+									специализированных обследований или коррекции зрения.
+								</p>
+
+								<a href="" class="services-card__btn">читать далее</a>
+							</div>
+
+							<div class="services-card">
+								<h4 class="typo-h4 services-card__title">Кардиология</h4>
+								<i class="services-card__icon"><i class="fas fa-heartbeat"></i></i>
+								<p class="services-card__text">
+									У нас есть вся необходимая техническая база. У нас есть вся необходимая техническая
+									база, аппаратура экспертного уровня, чтобы
+									проводить полный спектр обследований. Благодаря этому врачи-кардиологи клиники, чьи
+									опыт и квалификация позволяют вести даже самых сложных пациентов, ставят точный и
+									своевременный диагноз.
+								</p>
+								<a href="" class="services-card__btn">читать далее</a>
+							</div>
+
+							<div class="services-card">
+								<h4 class="typo-h4 services-card__title">Неврология</h4>
+								<i class="services-card__icon"><i class="fas fa-brain"></i></i>
+								<p class="services-card__text">
+									Наши специалисты имеют успешный опыт лечения пациентов с различными неврологическими
+									заболеваниями. Проводим УЗДГ, дуплексное сканирование головного мозга, компьютерную
+									томографию,
+									рентгенографию.
+									Предлагаем программы восстановления чувствительности и движений для пациентов после
+									инсульта
+								</p>
+								<a href="" class="services-card__btn">читать далее</a>
+							</div>
+
+							<div class="services-card">
+								<h4 class="typo-h4 services-card__title">Хирургия </h4>
+								<i class="services-card__icon"><i class="fas fa-procedures"></i></i>
+								<p class="services-card__text">
+									Пациентам выполняются все виды обезболивания, включая общий наркоз, спинальную и
+									эпидуральную анестезию. В нашем центре вы сможете записаться на консультацию к
+									хирургу в удобное время. Мы располагаем всем необходимым оборудованием для
+									проведения качественной диагностики, эффективного лечения и реабилитации.
+								</p>
+								<a href="" class="services-card__btn">читать далее</a>
+							</div>
+
+							<div class="services-card">
+								<h4 class="typo-h4 services-card__title">Стоматология</h4>
+								<i class="services-card__icon"><i class="fas fa-tooth"></i></i>
+								<p class="services-card__text">
+									У нас вы найдете ответы
+									на любые вопросы, связанные со здоровьем полости рта. Мы вылечим ваши зубы и не
+									допустим появления нового кариеса. Мы выровняем прикус и проведем профессиональную
+									гигиену. Мы установим надежные импланты и изготовим качественный протез. Мы заставим
+									вас чаще улыбаться!
+								</p>
+								<a href="" class="services-card__btn">читать далее</a>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div id="specialists" class="specialists">
+			<div class="default-padding">
+				<div class="container">
+					<div class="row justify-content-md-center">
+						<div class="col-md-8 col-md-offset-2">
+							<div class="default-heading">
+								<h2 class="typo-h2 default-heading__title">Наши <span
+										class="typo-color-primary">специалисты</span></h2>
+								<p class="default-heading__text">Эти врачи относятся к каждому пациенту, как к родному и
+									делают для его выздоровления все, что возможно. Для нас важен результат лечения,
+									качество медицинской помощи, честность и профессионализм. Большинство врачей имеют
+									опыт работы свыше 15 лет, кандидаты и доктора наук. Многие их них возглавляют
+									отделения в больницах или сами клиники в России и за рубежом.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="specialists__cards">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="specialist-card">
+									<img src="./img/specialist-card__img-1.jpg" alt="" class="specialist-card__img">
+									<div class="specialist-card__overlay">
+										<div class="specialist-card__icon">
+											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus"
+												class="svg-inline--fa fa-plus fa-w-14" role="img"
+												xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+												<path fill="currentColor"
+													d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg>
+										</div>
+									</div>
+
+									<div class="social">
+										<ul>
+											<li class="social__list"><a href=""
+													class="social__icon social__icon--facebook"><i class="fab fa-facebook-f"></i></a></li>
+											<li class="social__list"><a href=""
+													class="social__icon social__icon--twitter"><i class="fab fa-twitter"></i></a></li>
+											<li class="social__list"><a href=""
+													class="social__icon social__icon--instagram"><i class="fab fa-instagram"></i></a></li>
+											<li class="social__list"><a href=""
+													class="social__icon social__icon--linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+										</ul>
+									</div>
+
+									<div class="specialist-card__info">
+										<h4 class="typo-h4 specialist-card__name">Зеленкин Илья Викторович</h4>
+										<p class="specialist-card__worker">Кардиолог</p>
+										<div class="specialist-card__block-link"><a href=""
+												class="specialist-card__link">Назначить встречу</a></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="specialist-card">
+									<img src="./img/specialist-card__img-2.jpg" alt="" class="specialist-card__img">
+									<div class="specialist-card__overlay">
+										<div class="specialist-card__icon">
+											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus"
+												class="svg-inline--fa fa-plus fa-w-14" role="img"
+												xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+												<path fill="currentColor"
+													d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+												</path>
+											</svg>
+										</div>
+									</div>
+
+									<div class="social">
+										<ul>
+											<li class="social__list"><a href=""
+													class="social__icon social__icon--facebook"><i class="fab fa-facebook-f"></i></a></li>
+											<li class="social__list"><a href=""
+													class="social__icon social__icon--twitter"><i class="fab fa-twitter"></i></a></li>
+											<li class="social__list"><a href=""
+													class="social__icon social__icon--instagram"><i class="fab fa-instagram"></i></a></li>
+											<li class="social__list"><a href=""
+													class="social__icon social__icon--linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+										</ul>
+									</div>
+
+									<div class="specialist-card__info">
+										<h4 class="typo-h4 specialist-card__name">Андреевна Людмила Леонидовна</h4>
+										<p class="specialist-card__worker">Терапевт</p>
+										<div class="specialist-card__block-link"><a href=""
+												class="specialist-card__link">Назначить встречу</a></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="specialist-card">
+									<img src="./img/specialist-card__img-3.jpg" alt="" class="specialist-card__img">
+									<div class="specialist-card__overlay">
+										<div class="specialist-card__icon">
+												<i class="fas fa-plus"></i>										</div>
+									</div>
+
+									<div class="social">
+										<ul>
+											<li class="social__list"><a href=""
+													class="social__icon social__icon--facebook"><i class="fab fa-facebook-f"></i></a></li>
+											<li class="social__list"><a href=""
+													class="social__icon social__icon--twitter"><i class="fab fa-twitter"></i></a></li>
+											<li class="social__list"><a href=""
+													class="social__icon social__icon--instagram"><i class="fab fa-instagram"></i></a></li>
+											<li class="social__list"><a href=""
+													class="social__icon social__icon--linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+										</ul>
+									</div>
+
+									<div class="specialist-card__info">
+										<h4 class="typo-h4 specialist-card__name">Алексеев Сергей Алексеевич</h4>
+										<p class="specialist-card__worker">Стоматолог</p>
+										<div class="specialist-card__block-link"><a href=""
+												class="specialist-card__link">Назначить встречу</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+				</div>
+
+				<div class="col-md-6">
+					<ul class="footer__list">
+						<li class="footer__item"><a href="" class="footer__link">Условия пользователя</a></li>
+						<li class="footer__item"><a href="" class="footer__link">Лицензия</a></li>
+						<li class="footer__item"><a href="" class="footer__link">Поддержка</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
+		integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH"
+		crossorigin="anonymous"></script>
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
