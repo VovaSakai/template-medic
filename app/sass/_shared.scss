@@ -25,9 +25,12 @@
     padding: 0 0 50px 0;
     text-align: center;
 
-
     &__title {
         text-transform: uppercase;
+    }
+
+    @media (max-width: $breakpoint-xs) {
+        padding: 0 0 20px 0;
     }
 }
 
@@ -68,6 +71,13 @@
         }
     }
 
+    @media (max-width: $breakpoint-md) {
+        opacity: 1;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        bottom: 190px;
+    }
 }
 
 #home-owl-carousel .owl-nav > button {

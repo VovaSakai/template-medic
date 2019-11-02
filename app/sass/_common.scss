@@ -1,21 +1,13 @@
 .home-slide {
-    height: 540px;
+    min-height: 530px;
+    max-height: 540px;
+    padding: 150px 0;
     background: url(../img/home3.jpg) no-repeat;
-
-    &__title {
-        padding-top: 150px;
-
-        @media (max-width: $breakpoint-xs) {
-            padding-top: 50px;
-        }
-    }
+    background-size: cover;
+    
 
     &__subtitle {
-        margin-bottom: 10px ;
-    }
-
-    &__text {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     &__btn {
@@ -28,6 +20,11 @@
 
     &--second {
         background: url(../img/home2.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    @media (max-width: $breakpoint-xs) {
+        padding: 90px 0;
     }
 }
 
@@ -52,7 +49,8 @@
 
     &__link {
         display: inline-block;
-        padding: 15px 20px;
+        margin-top: 10px;
+        padding: 11px 15px;
         border: 1px solid #e7e7e7;
         margin-right: 5px;
         background: #f9f9f9;
@@ -74,10 +72,21 @@
                 border-left: 15px solid transparent;
                 border-right: 15px solid transparent;
                 border-top: 15px solid #0cb8b6;
+
+                @media (max-width: $breakpoint-md) {
+                    top: 49px;
+                }        
             }
-    
         }
 
+        @media (max-width: $breakpoint-md) {
+            font-size: 12px;
+            padding: 10px;
+        }
+
+        @media (max-width: $breakpoint-md) {
+            padding: 9px;
+        }
     }
 }
 
@@ -142,14 +151,19 @@
         border-radius: 100px 100px 100px 100px;
         border: 2px solid $color-primary;
     }
-}
 
+    @media (max-width: $breakpoint-md) {
+        padding: 30px 30px;
+    }
+}
 
 .specialist-card {
     box-shadow: 0 0 10px rgb(135, 158, 167);
     text-align: center;
 
     &__img {
+        max-height: 350px;
+        margin: 0 auto;
         transition: all 0.25s ease-in-out;
     }
 
@@ -177,6 +191,14 @@
     &__info {
         padding: 30px;
         border-top: 2px solid $color-primary;
+
+        @media (max-width: $breakpoint-md) {
+            padding: 20px 5px;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            border: none;
+        }
     }
 
     &__worker {
@@ -198,7 +220,10 @@
             width: 100%;
             background: $text-secondary-color;
             z-index: -1;
-        
+
+            @media (max-width: $breakpoint-sm) {
+                display: none;
+            }    
         }
     }
 
@@ -221,5 +246,9 @@
             opacity: 0.5;
         }
     
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        box-shadow: none;
     }
 }

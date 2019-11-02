@@ -6,6 +6,7 @@
 
   @media (max-width: $breakpoint-sm) {
     font-size: $font-size--h1-sm;
+    
   }
 
   @media (max-width: $breakpoint-xs) {
@@ -18,8 +19,9 @@
   font-family: $font-family;
   font-weight: 700;
 
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: $breakpoint-md) {
     font-size: $font-size--h2-md;
+    line-height: 45px;
   }
 }
 
